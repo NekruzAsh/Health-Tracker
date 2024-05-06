@@ -1,4 +1,4 @@
-# fitnessapp
+# Recipe Food app
 
 A new Flutter project.
 
