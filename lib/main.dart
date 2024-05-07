@@ -1,39 +1,20 @@
 import 'package:flutter/material.dart';
 
+import 'pages/home.dart';
+
 void main() {
-  runApp(myApp());
+  runApp(const MyApp());
 }
 
-class myApp extends StatelessWidget {
-  const myApp({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          shape: Border.all(width: 2, color: Colors.black),
-          foregroundColor: Colors.black,
-          shadowColor: Colors.black,
-          backgroundColor: Colors.amber.shade900,
-          bottomOpacity: BorderSide.strokeAlignOutside,
-          title: Text('Fitness App'),
-        ),
-        body: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center, // Updated line
-          children: const [
-            Expanded(
-              flex: 4,
-              child: Icon(Icons.food_bank),
-            ),
-            SizedBox(width: 16),
-            Icon(Icons.leaderboard),
-            SizedBox(width: 16),
-            Icon(Icons.person),
-          ],
-        ),
-      ),
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(fontFamily: "Roboto"),
+      home: const HomePage(),
     );
   }
 }
