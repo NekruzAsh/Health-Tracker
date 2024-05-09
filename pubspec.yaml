@@ -65,6 +65,11 @@ flutter:
     - assets/icons/three-dots.svg
     - assets/icons/search.svg
     - assets/icons/filter.svg
+    - assets/icons/plate.svg
+    - assets/icons/pie.svg
+    - assets/icons/pancakes.svg
+    - assets/icons/orange-snacks.svg
+
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
